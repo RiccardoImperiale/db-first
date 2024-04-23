@@ -38,3 +38,5 @@ VALUES
 
 ALTER TABLE used_cars
 ADD COLUMN price DECIMAL(8, 2) AFTER mileage;
+
+ALTER TABLE used_cars MODIFY COLUMN mileage MEDIUMINT;
