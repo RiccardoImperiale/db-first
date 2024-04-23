@@ -13,6 +13,7 @@ Table name: used_cars
 - model | VARCHAR(50) | NOTNULL
 - year | YEAR | NOTNULL
 - mileage | INT | NULL
+- price | DECIMAL(8,2) | NULL
 - number_plate | VARCHAR(20) | UNIQUE | NULL
 - body_type | VARCHAR(20) | NULL
 - color | VARCHAR(50) | NULL
