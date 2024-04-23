@@ -10,7 +10,6 @@ CREATE TABLE
         model VARCHAR(50) NOT NULL,
         year YEAR NOT NULL,
         mileage INT,
-        price DECIMAL(8, 2),
         number_plate VARCHAR(20) UNIQUE,
         body_type VARCHAR(20),
         color VARCHAR(50),
@@ -36,3 +35,6 @@ VALUES
     ('Honda', 'Accord', 2017, 1),
     ('Ford', 'Mustang', 2016, 1),
     ('Chevrolet', 'Cruze', 2015, 1);
+
+ALTER TABLE used_cars
+ADD COLUMN price DECIMAL(8, 2) AFTER mileage;
